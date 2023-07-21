@@ -1,8 +1,18 @@
-import React from 'react'
+import { goToPokemonDetail } from "../../Router/coordinator";
+import { useNavigate } from "react-router-dom";
 
-const PokemonCard = () => {
+const PokemonCard = ({pokemon}) => {
+
+ const navigate = useNavigate()
+
   return (
-    <div>PokemonCard</div>
+    <>
+    <br/>
+    <div>{pokemon.name}</div>
+    <br/>
+    <button onClick={() => goToPokemonDetail(navigate)}>Detalhes</button>
+    <button>Capturar</button>
+    </>
   )
 }
 

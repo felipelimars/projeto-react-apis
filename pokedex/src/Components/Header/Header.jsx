@@ -1,16 +1,14 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { goToHome, goToPokedex } from '../../Router/coordinator'
+import { goToPokedex } from '../../Router/coordinator'
+import logoPokemon from '../../utils/logo/logoPokemon.png'
 
 const Header = () => {
-
     const navigate = useNavigate()
   return (
     <div>
-        <p>HEADER</p>
-         <button onClick={() => goToHome(navigate)}>
-        Todos Pokémons
-      </button>
+        <img src={logoPokemon} alt='Logo Pokemon'/>
+        <h3>Todos Pokémons</h3>
       <button onClick={() => goToPokedex(navigate)}>
         Pokedex
       </button>

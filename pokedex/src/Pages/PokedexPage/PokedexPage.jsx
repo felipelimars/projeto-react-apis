@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
-import { goToPokemonDetail } from "../../Router/coordinator";
+import {  goToHome } from "../../Router/coordinator";
 import { useNavigate } from "react-router-dom";
 
 const PokedexPage = () => {
@@ -9,9 +9,9 @@ const PokedexPage = () => {
   return (
     <>
       <Header />
-      <p>Pokékex</p>
-      <button onClick={() => goToPokemonDetail(navigate)}>
-        Detalhes
+      <p>Pokédex</p>
+      <button onClick={() => goToHome(navigate)}>
+        Todos Pokémons
       </button>
     </>
   );

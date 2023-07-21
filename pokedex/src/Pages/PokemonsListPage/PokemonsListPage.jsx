@@ -1,21 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
-import { goToPokemonDetail } from "../../Router/coordinator";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { BASE_URL } from "../../constants/constants"
+import { BASE_URL } from "../../constants/constants";
+import PokemonCard from "../../Components/PokemonCard/PokemonCard";
 
 const PokemonsListPage = () => {
+  
+  const [pokemons, setPokemons] = useState([]);
 
   useEffect(() => {
-  getAllPokemons()
-  });
+    getAllPokemons();
+  }, []);
 
   const getAllPokemons = () => {
-
     axios
       .get(BASE_URL)
       .then((response) => {
+        setPokemons(response.data.results);
         console.log(response.data.results);
       })
       .catch((error) => {
@@ -23,16 +24,13 @@ const PokemonsListPage = () => {
       });
   };
 
-
-  const navigate = useNavigate();
-
   return (
     <>
       <Header />
       <p>Todos Pokemons (home)</p>
-      <button onClick={() => goToPokemonDetail(navigate)}>
-        Detalhes
-      </button>
+      {pokemons.map((pokemon) => {
+        return <PokemonCard key={pokemon.name} pokemon={pokemon} />;
+      })}
     </>
   );
 };
