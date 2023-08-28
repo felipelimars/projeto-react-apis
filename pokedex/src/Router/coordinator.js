@@ -6,14 +6,6 @@ export const goToPokedex = (navigate) => {
     navigate(`/pokedex`)
 }
 
-export const goToPokemonDetail = (navigate) => {
-    navigate(`/pokemonDetailPage`)
+export const goToPokemonDetail = (navigate, pokemonName) => {
+    navigate(`/pokemonDetailPage/${pokemonName}`)
 }
-
-
-
-
-
-/* Pagina para guardar as funções 
-de navegação. Elas estão sendo exportadas
- e importadas no local do componente. */
