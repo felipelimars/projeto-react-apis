@@ -26,11 +26,10 @@ Este projeto terá como fonte de dados para a sua criação a [Poke Api](https:/
 ## Front end
 
 - Integração de APIs
+- React
 - React Router
 - React Hooks
 - Estado Global
-- React
-- React Router
 - Styled-components
 - React Context
 - Axios
