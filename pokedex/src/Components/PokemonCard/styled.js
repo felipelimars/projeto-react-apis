@@ -6,6 +6,17 @@ import flyingImage from '../../assets/pokemon-types/flying.png';
 import waterImage from '../../assets/pokemon-types/water.png';
 import bugImage from '../../assets/pokemon-types/bug.png';
 import normalImage from '../../assets/pokemon-types/normal.png';
+import eletricImage from '../../assets/pokemon-types/electric.png'
+import darkImage from '../../assets/pokemon-types/dark.png'
+import dragonImage from '../../assets/pokemon-types/dragon.png'
+import fairyImage from '../../assets/pokemon-types/fairy.png'
+import fightingImage from '../../assets/pokemon-types/fighting.png'
+import ghostImage from '../../assets/pokemon-types/ghost.png'
+import groundImage from '../../assets/pokemon-types/ground.png'
+import iceImage from '../../assets/pokemon-types/ice.png'
+import psychicImage from '../../assets/pokemon-types/psychic.png'
+import rockImage from '../../assets/pokemon-types/rock.png'
+import steelImage from '../../assets/pokemon-types/water.png'
 
 const typeBackgrounds = {
   grass: `url(${grassImage})`,
@@ -15,7 +26,19 @@ const typeBackgrounds = {
   water: `url(${waterImage})`,
   bug: `url(${bugImage})`,
   normal: `url(${normalImage})`,
+  eletric: `url(${eletricImage})`,
+  dark: `url(${darkImage})`,
+  dragon: `url(${dragonImage})`,
+  fairy: `url(${fairyImage})`,
+  fighting: `url(${fightingImage})`,
+  ghost: `url(${ghostImage})`,
+  ground: `url(${groundImage})`,
+  ice: `url(${iceImage})`,
+  psychic: `url(${psychicImage})`,
+  rock: `url(${rockImage})`,
+  steel: `url(${steelImage})`,
 };
+
 
 
 export const Container = styled.div`

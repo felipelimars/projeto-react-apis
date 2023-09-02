@@ -4,7 +4,7 @@ export const ContainerPokedex = styled.section`
   display: flex;
   flex-direction: column; 
   background-color: rgb(94, 94, 94);
-  min-height: 100vh; 
+  min-height: 100vh;
 `;
 
 export const TextHome = styled.h1`
