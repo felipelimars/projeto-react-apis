@@ -70,7 +70,7 @@ padding-top: 5vh;
 `
 export const SectionHome = styled.section`
 height: 100vh;
-width: 98vw;
+width: 100%;
 background-color: rgb(94, 94, 94) ;
 `
 

@@ -81,10 +81,10 @@ const PokemonsListPage = () => {
               {allPokemonsCaptured ? (
                 <ContainerMessageCaptured>
                   <AshImage src={Ash} alt="Ash image with pokeball" />
-                  <AshMessage>Você capturou todos os Pokemons!</AshMessage>
+                  <AshMessage>Você capturou todos os Pokémons!</AshMessage>
                 </ContainerMessageCaptured>
               ) : (
-                "Todos Pokemons"
+                "Todos Pokémons"
               )}
             </TextHome>
           </TextContainer>
