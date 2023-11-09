@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-[Link (Deploy)](https://pokedex-felipelima.surge.sh/)
+[Link (Deploy)](https://pokedexpokemons.surge.sh)
 
 O Projeto React e APIs é um site de pokémons que possui três páginas: Home, Pokedex e Detalhes. O projeto está subdivido em temas de acordo com os conteúdos que foram estudados no Módulo 2 - Frontend durante o curso da [Labenu](https://www.labenu.com.br/ "Site da Labenu").
 
